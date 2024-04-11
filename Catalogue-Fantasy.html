@@ -36,6 +36,9 @@
                   <li class="nav-item">
                       <a class="nav-link" href="Register.html">Registrar usuario</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Shopping Cart.html">Carrito de compras</a>
+                    </li> 
                 </ul>
                 <form class="d-flex" role="search">
                   <input class="form-control me-2" type="search" placeholder=" Buscar libro..." aria-label="Busqueda">
@@ -51,11 +54,26 @@
         <div class="card-body">
           <h5 class="card-title">El camino de los reyes</h5>
           <h3>$19.999</h3>
-          <p class="card-text">El camino de los reyes es una novela de fantasía épica escrita por el autor estadounidense Brandon Sanderson y el primer libro de la saga El archivo de las tormentas.</p>
-          <a href="#" class="btn btn-primary">¡Agregar a carrito de compra!</a>
+          <p class="card-text">Anhelo los días previos a la Última Desolación. Los días en que los Heraldos nos abandonaron y los Caballeros Radiantes se giraron en nuestra contra. Un tiempo en que aún había magia en el mundo y honor en el corazón de los hombres. El mundo fue nuestro, pero lo perdimos. Probablemente no hay nada más estimulante para las almas de los hombres que la victoria. ¿O tal vez fue la victoria una ilusión durante todo ese tiempo? ¿Comprendieron nuestros enemigos que cuanto más duramente luchaban, más resistíamos nosotros? Quizá vieron que el fuego y el martillo tan solo producían mejores espadas. Pero ignoraron el acero durante el tiempo suficiente para oxidarse. </p>
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Agregar a carrito de compras!
+          </button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Producto agregado!</h1>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Seguir navegando</button>
+                  <a href="Shopping Cart.html"><button type="button" class="btn btn-primary">Ir al carrito de compras</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
-      </div>
-      
+      </div>    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
