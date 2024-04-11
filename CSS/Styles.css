@@ -82,7 +82,7 @@ input[type=text], input[type=password] {
   }
 
   .carousel-caption h5 {
-    color: black;
+    color: whitesmoke;
     font-size: xx-large;
     padding: 2px;
   }
@@ -105,8 +105,7 @@ input[type=text], input[type=password] {
   }*/
 
   .card {
-    width: 33vw; /* adjust width as needed */
-    height: auto; /* maintain aspect ratio */
+    width: 33vw;
+    height: auto;
     float: left;
-    position: relative;
 }
