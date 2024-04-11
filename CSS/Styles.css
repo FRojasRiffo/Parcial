@@ -43,24 +43,20 @@ form {
     margin: 24px 0 12px 0;
   }
   
-  /* Avatar image */
   img.avatar {
-    width: 30%;
+    width: 50%;
     border-radius: 50%;
   }
   
-  /* Add padding to containers */
   .container {
     padding: 16px;
   }
   
-  /* The "Forgot password" text */
   span.psw {
     float: right;
     padding-top: 16px;
   }
   
-  /* Change styles for span and cancel button on extra small screens */
   @media screen and (max-width: 300px) {
     span.psw {
       display: block;
