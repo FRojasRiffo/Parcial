@@ -109,3 +109,14 @@ input[type=text], input[type=password] {
     height: auto;
     float: left;
 }
+
+.cart_item_image{
+  height: 20px;
+  width: 20px;
+}
+
+.imgshop{
+  height: 212px;
+  width: 212px;
+  float: left;
+}
