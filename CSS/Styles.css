@@ -12,13 +12,14 @@ form {
   
 input[type=text], input[type=password] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 14px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
 }
   
+
   button {
     background-color: #04AA6D;
     color: white;
@@ -116,7 +117,12 @@ input[type=text], input[type=password] {
 }
 
 .imgshop{
-  height: 212px;
-  width: 212px;
+  height: 250px;
+  width: 190px;
   float: left;
+}
+
+body{
+   background-image: url("https://cdn.pixabay.com/photo/2020/07/23/03/22/books-5430309_1280.jpg");
+   
 }
