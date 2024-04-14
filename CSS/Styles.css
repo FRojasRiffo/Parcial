@@ -58,6 +58,8 @@ input[type=text], input[type=password] {
   
   .container {
     padding: 16px;
+
+    color: aliceblue;
   }
   
   span.psw {
@@ -112,17 +114,50 @@ input[type=text], input[type=password] {
 }
 
 .cart_item_image{
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
 }
 
 .imgshop{
-  height: 250px;
-  width: 190px;
+  height: 370px;
+  width: 270px;
   float: left;
 }
 
 body{
-   background-image: url("https://cdn.pixabay.com/photo/2020/07/23/03/22/books-5430309_1280.jpg");
+   background-image:url("https://cdn.pixabay.com/photo/2020/07/23/03/22/books-5430309_1280.jpg");
+   opacity: .9;
    
 }
+
+.cart_item_title{
+
+  color: aliceblue;
+  margin-left: 140px;
+
+}
+
+.cart_item_text{
+
+   color: aliceblue;
+   margin-left: 145px;
+
+}
+
+.cart_title{
+
+   color: aliceblue;
+   text-align: center;
+
+}
+
+.login_p{
+
+  color: white;
+}
+
+.terminos{
+
+  color: white;
+}
+
