@@ -5,10 +5,6 @@ div.sticky {
     z-index: 1000;
 }
 
-
-form {
-    border: 3px solid #f1f1f1;
-  }
   
 input[type=text], input[type=password] {
     width: 100%;
@@ -58,8 +54,6 @@ input[type=text], input[type=password] {
   
   .container {
     padding: 16px;
-
-    color: aliceblue;
   }
   
   span.psw {
@@ -124,34 +118,30 @@ input[type=text], input[type=password] {
   float: left;
 }
 
-body{
+/*body{
    background-image:url("https://cdn.pixabay.com/photo/2020/07/23/03/22/books-5430309_1280.jpg");
-   opacity: .9;
    
-}
+}*/
 
 .cart_item_title{
 
-  color: aliceblue;
   margin-left: 140px;
 
 }
 
 .cart_item_text{
 
-   color: aliceblue;
    margin-left: 145px;
 
 }
 
 .cart_title{
 
-   color: aliceblue;
    text-align: center;
 
 }
 
-.login_p{
+/*.login_p{
 
   color: white;
 }
@@ -159,5 +149,5 @@ body{
 .terminos{
 
   color: white;
-}
+}*/
 
