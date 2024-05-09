@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "El camino de los reyes",
+        "price": 20.999,
+        "image": "1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Dune",
+        "price": 19.999,
+        "image": "2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Y no quedó ninguno",
+        "price": 12.999,
+        "image": "3.jpg"
+    }
+]
