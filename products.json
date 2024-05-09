@@ -16,5 +16,36 @@
         "name": "Y no quedó ninguno",
         "price": 12.999,
         "image": "3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Guards! Guards!",
+        "price": 14.999,
+        "image": "4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Kings of the Wyld",
+        "price": 16.999,
+        "image": "5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "The Shadow of the Gods",
+        "price": 17.999,
+        "image": "6.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Babel",
+        "price": 22.999,
+        "image": "7.jpg"
+    },
+    {
+        "id": 8,
+        "name": "A Deadly Education",
+        "price": 23999,
+        "image": "8.jpg"
     }
+
 ]
