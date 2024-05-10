@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 newCart.dataset.id = cart.product_id;
                 let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
                 let info = listProducts[positionProduct];
-                let itemPrice = info.price * cart.quantity; // Calculate item price
-                totalPrice += itemPrice; // Add item price to total price
+                let itemPrice = info.price * cart.quantity;
+                totalPrice += itemPrice;
                 newCart.innerHTML = `
                     <div class="image">
                         <img src="${info.image}" alt="">
@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
             let totalElement = document.createElement('div');
             totalElement.classList.add('total');
             totalElement.innerHTML = `
-                <span class="total">Total: $${totalPrice}</span>
+                <span class="total">Total a pagar: $${totalPrice}</span>
             `;
             listCartHTML.appendChild(totalElement);
         }
