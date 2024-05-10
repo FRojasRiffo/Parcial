@@ -106,12 +106,14 @@ svg{
 }
 
 .listProduct .item img{
+    height: 70%;
     width: 90%;
     filter: drop-shadow(0 50px 20px #0009);
+    margin-bottom: 10%;
 }
 .listProduct{
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 .listProduct .item{
@@ -120,12 +122,13 @@ svg{
     border-radius: 20px;
 }
 .listProduct .item h2{
-    font-weight: 500;
+    font-weight: bolder;
     font-size: large;
+    text-align: center;
 }
 .listProduct .item .price{
-    letter-spacing: 7px;
     font-size: small;
+    font-weight: bold;
 }
 .listProduct .item button{
     background-color: #353432;
@@ -135,6 +138,7 @@ svg{
     margin-top: 10px;
     border: none;
     cursor: pointer;
+    position: relative;
 }
 
 .cartTab{
@@ -215,4 +219,13 @@ body.showCart .container{
   margin-top: 10px;
   height: 40px;
 } 
+
+.total{
+  text-align: center;
+  margin-top: 10%;
+}
+
+#nav-icon{
+  height: 5vh;
+}
 

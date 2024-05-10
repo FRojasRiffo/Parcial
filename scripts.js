@@ -27,14 +27,16 @@ document.addEventListener('DOMContentLoaded', function () {
                 newProduct.innerHTML = `
                     <img src="${product.image}" alt="">
                     <h2>${product.name}</h2>
-                    <div class="price">${product.price}</div>
+                    <div class="price">$${product.price}</div>
                     <button class="addCart">
                         Agregar al carrito
-                    </button>`;
+                    </button>
+                    `;
                 listProductHTML.appendChild(newProduct);
             });
         }
     };
+    
 
     listProductHTML.addEventListener('click', (event) => {
         let positionClick = event.target;
@@ -70,6 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const addCartToHTML = () => {
         listCartHTML.innerHTML = '';
         let totalQuantity = 0;
+        let totalPrice = 0;
         if (carts.length > 0) {
             carts.forEach(cart => {
                 totalQuantity = totalQuantity + cart.quantity;
@@ -78,6 +81,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 newCart.dataset.id = cart.product_id;
                 let positionProduct = listProducts.findIndex((value) => value.id == cart.product_id);
                 let info = listProducts[positionProduct];
+                let itemPrice = info.price * cart.quantity; // Calculate item price
+                totalPrice += itemPrice; // Add item price to total price
                 newCart.innerHTML = `
                     <div class="image">
                         <img src="${info.image}" alt="">
@@ -86,7 +91,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         ${info.name}
                     </div>
                     <div class="totalPrice">
-                        ${info.price * cart.quantity}
+                        $${itemPrice}
                     </div>
                     <div class="quantity">
                         <span class="minus"><</span>
@@ -96,9 +101,17 @@ document.addEventListener('DOMContentLoaded', function () {
                 `;
                 listCartHTML.appendChild(newCart);
             });
+    
+            let totalElement = document.createElement('div');
+            totalElement.classList.add('total');
+            totalElement.innerHTML = `
+                <span class="total">Total: $${totalPrice}</span>
+            `;
+            listCartHTML.appendChild(totalElement);
         }
         iconCartSpan.innerText = totalQuantity;
     };
+    
 
     listCartHTML.addEventListener('click', (event) => {
         let positionClick = event.target;
@@ -150,3 +163,4 @@ document.addEventListener('DOMContentLoaded', function () {
 
     initApp();
 });
+
