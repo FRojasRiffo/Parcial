@@ -111,7 +111,7 @@ svg{
 .listProduct .item img{
     height: 70%;
     width: 90%;
-    filter: drop-shadow(0 50px 20px #0009);
+    filter: drop-shadow(0 20px 20px #0009);
     margin-bottom: 10%;
 }
 .listProduct{
@@ -146,7 +146,7 @@ svg{
 
 .cartTab{
     width: 400px;
-    background-color: #353432;
+    background-color: #1a2a39;
     color: #eee;
     position: fixed;
     inset: 0 -400px 0 auto;
@@ -166,11 +166,11 @@ body.showCart .container{
     font-weight: 300;
 }
 .cartTab .btn{
-    display: grid;
+    display: contents;
     grid-template-columns: repeat(2, 1fr);
 }
 .cartTab .btn button{
-    background-color: #E8BC0E;
+    background-color:#d7c095;
     border: none;
     font-family: Poppins;
     font-weight: 500;
