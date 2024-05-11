@@ -106,13 +106,14 @@ document.addEventListener('DOMContentLoaded', function () {
     
             checkoutButtonDisabled = false;
         }
-    
-        let totalElement = document.createElement('div');
-        totalElement.classList.add('total');
-        totalElement.innerHTML = `
-            <span class="total">Total a pagar: $${totalPrice}</span>
-        `;
-        listCartHTML.appendChild(totalElement);
+        
+        if(totalQuantity > 0){
+            let totalElement = document.createElement('div');
+            totalElement.classList.add('total');
+            totalElement.innerHTML = `
+                <span class="total">Total a pagar: $${totalPrice}</span>
+            `;
+            listCartHTML.appendChild(totalElement);}
     
         iconCartSpan.innerText = totalQuantity;
     
