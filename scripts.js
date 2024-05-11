@@ -73,9 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
         listCartHTML.innerHTML = '';
         let totalQuantity = 0;
         let totalPrice = 0;
+        let checkoutButtonDisabled = true;
+        
         if (carts.length > 0) {
             carts.forEach(cart => {
-                totalQuantity = totalQuantity + cart.quantity;
+                totalQuantity += cart.quantity;
                 let newCart = document.createElement('div');
                 newCart.classList.add('item');
                 newCart.dataset.id = cart.product_id;
@@ -98,20 +100,26 @@ document.addEventListener('DOMContentLoaded', function () {
                         <span>${cart.quantity}</span>
                         <span class="plus">></span>
                     </div>
-                    
                 `;
                 listCartHTML.appendChild(newCart);
             });
     
-            let totalElement = document.createElement('div');
-            totalElement.classList.add('total');
-            totalElement.innerHTML = `
-                <span class="total">Total a pagar: $${totalPrice}</span>
-            `;
-            listCartHTML.appendChild(totalElement);
+            checkoutButtonDisabled = false;
         }
+    
+        let totalElement = document.createElement('div');
+        totalElement.classList.add('total');
+        totalElement.innerHTML = `
+            <span class="total">Total a pagar: $${totalPrice}</span>
+        `;
+        listCartHTML.appendChild(totalElement);
+    
         iconCartSpan.innerText = totalQuantity;
+    
+        const checkoutButton = document.querySelector('.checkout');
+        checkoutButton.disabled = checkoutButtonDisabled;
     };
+    
     
 
     listCartHTML.addEventListener('click', (event) => {
