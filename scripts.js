@@ -98,6 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <span>${cart.quantity}</span>
                         <span class="plus">></span>
                     </div>
+                    
                 `;
                 listCartHTML.appendChild(newCart);
             });

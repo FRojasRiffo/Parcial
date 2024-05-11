@@ -54,6 +54,13 @@
         "price": 23999,
         "image": "Images/8.jpg",
         "description" : "Libro"
+    },
+    {
+        "id": 9,
+        "name": "Song of Achilles",
+        "price": 23999,
+        "image": "Images/9.jpg",
+        "description" : "Libro"
     }
 
 ]
