@@ -312,3 +312,11 @@ body.showCart .container{
 .total{
   font-weight: bold;
 }
+
+.container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+}
