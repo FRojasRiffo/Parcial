@@ -53,13 +53,43 @@
           <label for="psw"><b>Contraseña</b></label>
           <input type="password" placeholder="Ingrese contraseña" name="psw">
   
-          <button type="submit" class="loginbtn">Iniciar sesión</button>
+          <button type="button" class="btn btn-primary" id="openModalBtn">
+            Iniciar sesión
+        </button>
+
+
           <label>
             <input type="checkbox" checked="checked" name="remember"> Recordar usuario
           </label>
         </div>
       </form>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Tus datos son correctos, Bienvenid@</h1>
+                <div class="btn"></div>
+                <a href="Catalogue.html"><button class="close">Comienza Aquí</button></a>
+              </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <script>
+    $(document).ready(function() {
+        $("#openModalBtn").click(function() {
+        $("#exampleModal").modal('show');
+        });
+    });
+    </script>
+    </form>
+  </div>
+</div>
+</main>
+
+<script src="checkout.js"></script></body>
 </html>
+
