@@ -78,7 +78,7 @@
 
   <script>
     document.getElementById("registerForm").addEventListener("submit", function(event) {
-      event.preventDefault(); 
+      event.preventDefault(); // Evita que el formulario se envíe automáticamente
 
       var username = document.getElementById("usuario").value;
       var email = document.getElementById("email").value;
@@ -101,7 +101,7 @@
         return;
       }
 
-      window.location.href = "nueva_pagina.html";
+      window.location.href = "login.html";
     });
   </script>
 
